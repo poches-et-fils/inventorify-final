@@ -188,9 +188,7 @@ export default class Main extends Component {
                             return response.json()
                         })
                         .then(responseJson => {
-                            console.log(responseJson)
-                            console.log(responseJson[responseJson.length])
-                            //this.setState({ displayCurrentlyModifiedProduct: responseJson[responseJson.length] })
+                            this.setState({ displayCurrentlyModifiedProduct: responseJson.inventory_level.inventory_item_id })
                             array.push(responseJson);
                         })
                 );
@@ -242,9 +240,7 @@ export default class Main extends Component {
                         }))
                         .then(response => response.json())
                         .then(responseJson => {
-                            console.log(responseJson)
-                            console.log(responseJson[responseJson.length])
-                            //this.setState({ displayCurrentlyModifiedProduct: responseJson[responseJson.length] })
+                            this.setState({ displayCurrentlyModifiedProduct: responseJson.inventory_level.inventory_item_id })
                             array.push(responseJson)
                         })
                 );
@@ -336,8 +332,8 @@ export default class Main extends Component {
 
                 <div style={{ height: "30px" }} />
 
-               {this.state.doDisplayWarningMessage && <h2>NE PAS FERMER CETTE FENÊTRE</h2>}
-               {/* {this.state.doDisplayWarningMessage && <h5>En cours... ID:{this.state.displayCurrentlyModifiedProduct}</h5>} */}
+               {this.state.doDisplayWarningMessage && <h1 style={{textAlign:"center"}}>NE PAS FERMER CETTE FENÊTRE</h1>}
+               {this.state.doDisplayWarningMessage && <h3 style={{textAlign:"center"}}>En cours... ID:{this.state.displayCurrentlyModifiedProduct}</h3>}
             </div >
         )
     }
