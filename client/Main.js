@@ -162,7 +162,7 @@ export default class Main extends Component {
 
         if (result == true) {
             this.setState({
-                doDisplayWarningMessage = true,
+                doDisplayWarningMessage: true,
                 isApplyInventoryLoading: true,
                 isApplyPricesDisabled: true,
                 disableTextInputs: true,
@@ -215,7 +215,7 @@ export default class Main extends Component {
 
         if (result == true) {
             this.setState({
-                doDisplayWarningMessage = true,
+                doDisplayWarningMessage: true,
                 isApplyPricesLoading: true,
                 isApplyInventoryDisabled: true,
                 disableTextInputs: true,
