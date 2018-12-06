@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { GENRE, BASE, TAILLE, COULEUR, STORELOCATION } from './Variantes'
-import { Layout, TextField, FormLayout, Select, Button, ChoiceList, Banner } from '@shopify/polaris';
+import { Layout, TextField, FormLayout, Select, Button, Subheading, Banner } from '@shopify/polaris';
 
 export default class Main extends Component {
     constructor(props) {
