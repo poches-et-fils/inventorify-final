@@ -32,7 +32,10 @@ export default class Main extends Component {
             numModifLeft: 0,
             disableGenreEtBase: true,
             disableCouleur: true,
-            disableTaille: true
+            disableTaille: true,
+
+            doDisplayWarningMessage: false,
+            displayCurrentlyModifiedProduct: ""
         }
     }
 
@@ -159,6 +162,7 @@ export default class Main extends Component {
 
         if (result == true) {
             this.setState({
+                doDisplayWarningMessage = true,
                 isApplyInventoryLoading: true,
                 isApplyPricesDisabled: true,
                 disableTextInputs: true,
@@ -184,7 +188,7 @@ export default class Main extends Component {
                             return response.json()
                         })
                         .then(responseJson => {
-                            console.log("array",array)
+                            this.setState({ displayCurrentlyModifiedProduct: responseJson })
                             array.push(responseJson);
                         })
                 );
@@ -211,6 +215,7 @@ export default class Main extends Component {
 
         if (result == true) {
             this.setState({
+                doDisplayWarningMessage = true,
                 isApplyPricesLoading: true,
                 isApplyInventoryDisabled: true,
                 disableTextInputs: true,
@@ -235,7 +240,7 @@ export default class Main extends Component {
                         }))
                         .then(response => response.json())
                         .then(responseJson => {
-                            console.log(responseJson);
+                            this.setState({ displayCurrentlyModifiedProduct: responseJson })
                             array.push(responseJson)
                         })
                 );
@@ -248,6 +253,14 @@ export default class Main extends Component {
                 location.reload();
             });
         }
+    }
+
+    //  Display Warning + Currently modifying
+    displayWarning = (props) => {
+        return <h3>NE PAS FERMER CETTE PAGE</h3>
+    }
+    displayModifiedInventoryID = () => {
+        return<h5>En cours ... {displayCurrentlyModifiedProduct}</h5>
     }
 
     //  Handlers
@@ -324,8 +337,10 @@ export default class Main extends Component {
                     </Button>
                 </FormLayout.Group>
 
-
                 <div style={{ height: "30px" }} />
+
+               {this.state.doDisplayWarningMessage && <h3>NE PAS FERMER CETTE FENÊTRE</h3>}
+               {this.state.doDisplayWarningMessage && <h5>En cours... ID:{this.state.displayCurrentlyModifiedProduct}</h5>}
             </div >
         )
     }
