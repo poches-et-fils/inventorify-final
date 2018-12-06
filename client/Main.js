@@ -188,7 +188,9 @@ export default class Main extends Component {
                             return response.json()
                         })
                         .then(responseJson => {
-                            this.setState({ displayCurrentlyModifiedProduct: responseJson })
+                            console.log(responseJson)
+                            console.log(responseJson[responseJson.length])
+                            //this.setState({ displayCurrentlyModifiedProduct: responseJson[responseJson.length] })
                             array.push(responseJson);
                         })
                 );
@@ -257,13 +259,6 @@ export default class Main extends Component {
         }
     }
 
-    //  Display Warning + Currently modifying
-    displayWarning = (props) => {
-        return <h3>NE PAS FERMER CETTE PAGE</h3>
-    }
-    displayModifiedInventoryID = () => {
-        return<h5>En cours ... {displayCurrentlyModifiedProduct}</h5>
-    }
 
     //  Handlers
     handleSelectChange = (value) => { this.setState({ categorySelect: value }) }
@@ -342,7 +337,7 @@ export default class Main extends Component {
                 <div style={{ height: "30px" }} />
 
                {this.state.doDisplayWarningMessage && <h2>NE PAS FERMER CETTE FENÊTRE</h2>}
-               {this.state.doDisplayWarningMessage && <h5>En cours... ID:{this.state.displayCurrentlyModifiedProduct}</h5>}
+               {/* {this.state.doDisplayWarningMessage && <h5>En cours... ID:{this.state.displayCurrentlyModifiedProduct}</h5>} */}
             </div >
         )
     }
