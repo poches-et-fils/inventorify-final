@@ -88,7 +88,7 @@ export default class Main extends Component {
             delay += delayIncrement
         }
         Promise.all(fetches).then(() => {
-            console.log("all products fetched", obj)
+            console.log("all products fetched", obj);
             this.putDataInState(obj);
         })
     }
@@ -184,6 +184,7 @@ export default class Main extends Component {
                             return response.json()
                         })
                         .then(responseJson => {
+                            console.log("array",array)
                             array.push(responseJson);
                         })
                 );
@@ -262,7 +263,6 @@ export default class Main extends Component {
 
 
     render() {
-        console.log(this.state);
         return (
             <div>
                 <div>Variantes à modifier: {this.state.variantIds.length}</div>
