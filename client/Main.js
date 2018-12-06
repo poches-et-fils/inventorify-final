@@ -332,8 +332,8 @@ export default class Main extends Component {
 
                 <div style={{ height: "30px" }} />
 
-               {this.state.doDisplayWarningMessage && <h1 style={{textAlign:"center"}}>NE PAS FERMER CETTE FENÊTRE</h1>}
-               {this.state.doDisplayWarningMessage && <h3 style={{textAlign:"center"}}>En cours... ID:{this.state.displayCurrentlyModifiedProduct}</h3>}
+               {this.state.doDisplayWarningMessage && <Subheading element="h2"> style={{textAlign:"center"}}>NE PAS FERMER CETTE FENÊTRE</Subheading>}
+               {this.state.doDisplayWarningMessage && <Subheading element="h4"> style={{textAlign:"center"}}>En cours... ID#: {this.state.displayCurrentlyModifiedProduct}</Subheading>}
             </div >
         )
     }
