@@ -50,7 +50,7 @@ export const COULEUR = [
     { label: "Blanc", value: "blanc" },
     { label: "Charbon", value: "charbon" },
     { label: "Gris", value: "gris" }
-    { label: "Bleu marine", value: "Bleu Marine" }
+    { label: "Bleu marine", value: "bleu-marine" }
     { label: "Cerise", value: "yogourt-aux-cerises" }
 
 ]
