@@ -23,7 +23,8 @@ export const BASE = [
     { label: "Bas", value: "Bas" },
     { label: "Casquette", value: "Casquette" },
     { label: "Tuque", value: "Tuque" },
-    { label: "Étui de téléphone", value: "Étui de téléphone" }
+    { label: "Étui de téléphone", value: "Étui de téléphone" },
+    { label: "T-shirt Boyfriend à poche", value: "T-shirt Boyfriend à poche" }
 
 ]
 
@@ -52,6 +53,8 @@ export const COULEUR = [
     { label: "Gris", value: "gris" },
     { label: "Marine", value: "bleu-marine" },
     { label: "Cerise", value: "yogourt-aux-cerises" },
+    { label: "Bleu-royal", value: "bleu-royal" },
+    { label: "Sarcelle", value: "sarcelle" },
 
 ]
 
