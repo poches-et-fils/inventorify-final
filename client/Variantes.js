@@ -42,7 +42,7 @@ export const TAILLE = [
     { label: "2T", value: "2T" },
     { label: "3T", value: "3T" },
     { label: "4T", value: "4T" },
-    { label: "5-6T", value: "5-6T" }
+    { label: "5T6T", value: "5T6T" }
 ]
 
 export const COULEUR = [
