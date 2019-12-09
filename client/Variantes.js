@@ -55,6 +55,7 @@ export const COULEUR = [
     { label: "Cerise", value: "yogourt-aux-cerises" },
     { label: "Bleu-royal", value: "bleu-royal" },
     { label: "Sarcelle", value: "sarcelle" },
+    { label: "Nectarine", value: "nectarine" },
 
 ]
 
