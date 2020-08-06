@@ -13,7 +13,9 @@ export const GENRE = [
 export const BASE = [
     { label: "Tous", value: "" },
     { label: "T-shirt à poche", value: "T-shirt à poche" },
-    { label: "V-neck à poche", value: "V-neck à poche" },
+    { label: "T-shirt Boyfriend à poche", value: "T-shirt Boyfriend à poche" },
+    { label: "Col en V coupe ajustée à poche", value: "Col en V coupe ajustée à poche" },
+    { label: "Col en V Boyfriend à poche", value: "Col en V Boyfriend à poche" },
     { label: "Robe à poche", value: "Robe à poche" },
     { label: "T-shirt à manches longues à poche", value: "T-shirt à manches longues à poche" },
     { label: "Camisole à poche", value: "Camisole à poche" },
@@ -23,8 +25,7 @@ export const BASE = [
     { label: "Bas", value: "Bas" },
     { label: "Casquette", value: "Casquette" },
     { label: "Tuque", value: "Tuque" },
-    { label: "Étui de téléphone", value: "Étui de téléphone" },
-    { label: "T-shirt Boyfriend à poche", value: "T-shirt Boyfriend à poche" }
+    { label: "Étui de téléphone", value: "Étui de téléphone" }    
 
 ]
 
