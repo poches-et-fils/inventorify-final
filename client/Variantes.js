@@ -26,7 +26,6 @@ export const BASE = [
     { label: "Casquette", value: "Casquette" },
     { label: "Tuque", value: "Tuque" },
     { label: "Étui de téléphone", value: "Étui de téléphone" }    
-
 ]
 
 export const TAILLE = [
